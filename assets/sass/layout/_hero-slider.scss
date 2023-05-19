@@ -1,0 +1,121 @@
+/*--------------------------------------------------------------
+3. content
+--------------------------------------------------------------*/
+/*-------------------------------------------
+	hero style 1
+--------------------------------------------*/
+.static-hero {
+	height: 777px;
+	background-size: cover;
+	display: flex;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+
+	@include media-query(1400px) {
+		height: 900px;
+	}
+
+	@include media-query(1199px) {
+		height: 650px;
+	}
+
+	@include media-query(991px) {
+		height: 550px;
+	}
+
+	@include media-query(767px) {
+		height: 550px;
+	}
+
+	@include media-query(575px) {
+		height: 450px;
+	}
+
+	.static-hero-inner {
+		max-width: 686px;
+		background: rgba(0, 0, 0, 0.69);
+		border-radius: 12px;
+		padding: 50px 20px;
+		margin-left: 185px;
+
+		@include media-query(1300px) {
+			margin-left: 100px;
+		}
+
+		@include media-query(991px) {
+			margin: 0 auto;
+		}
+
+		@media(max-width:991px) {
+			text-align: center;
+		}
+	}
+
+	.hero-inner {
+		@media(max-width:991px) {
+			display: block;
+		}
+	}
+
+	.hero-inner {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		text-align: left;
+	}
+
+	.slide-title {
+
+		h2 {
+			color: $white;
+			margin-bottom: 20px;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 110%;
+
+			@include media-query(767px) {
+				font-size: 40px;
+			}
+		}
+	}
+
+	.hero-inner .container {
+		position: relative;
+
+	}
+
+	.hero-inner {
+		&::before {
+			display: none;
+		}
+	}
+
+	.slide-text p {
+		color: $white;
+		margin: 0;
+		font-size: 19px;
+		line-height: 33px;
+		margin-bottom: 40px;
+
+		@include media-query(530px) {
+			font-size: 15px;
+			line-height: 28px;
+		}
+	}
+}
