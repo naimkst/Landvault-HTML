@@ -125,4 +125,35 @@
 			}
 		}
 	}
+
+
+	&.s2 {
+		padding-top: 120px;
+
+		@include media-query(1200px) {
+			padding-top: 80px;
+		}
+
+		.upper-footer {
+			position: relative;
+			padding-top: 120px;
+
+			@include media-query(1200px) {
+				padding-top: 80px;
+			}
+
+			&:after {
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+				content: "";
+				background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.53%, #FFFFFF 79.88%, rgba(255, 255, 255, 0) 100%);
+				opacity: 0.2;
+				width: 80%;
+				height: 1px;
+			}
+		}
+
+	}
 }

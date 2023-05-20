@@ -43,7 +43,7 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 11;
+	z-index: 111;
 
 	@media (min-width: 991px) {
 		padding: 0 50px;
@@ -303,6 +303,7 @@
 			padding: 5px 10px;
 			font-size: 12px;
 		}
+
 		@media(max-width:575px) {
 			padding: 5px 6px;
 			font-size: 10px;
@@ -1251,5 +1252,26 @@
 
 	&.navigation {
 		background: $bg-color;
+	}
+}
+
+
+// header-style-2
+
+.header-style-2 {
+	.site-header {
+		position: absolute;
+		width: 100%;
+		background: none;
+		left: unset;
+		top: unset;
+
+		.header-right .header-btn {
+			.theme-btn {
+				background: linear-gradient(0deg, #A000FA, #A000FA), linear-gradient(237.97deg, #5C42FF 0%, #921EF1 100%);
+				color: $white;
+			}
+		}
+
 	}
 }
