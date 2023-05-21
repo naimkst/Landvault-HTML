@@ -1255,6 +1255,16 @@
 	}
 }
 
+.header-style-1{
+	&.s2{
+		position: absolute;
+		width: 100%;
+		.site-header{
+			background: transparent;
+		}
+	}
+}
+
 
 // header-style-2
 

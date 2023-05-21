@@ -126,15 +126,6 @@
         $('.open-btn').removeClass('x-close');
     });
 
-
-    // tooltips
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
-
     // Parallax background
     function bgParallax() {
         if ($(".parallax").length) {
@@ -158,7 +149,7 @@
         = HERO SLIDER
     -------------------------------------------*/
 
-    if($(".hero-style-1") || $(".hero-style-2")) {
+    if($(".hero-style-1")) {
         // settings
        var $sliderDelay = 7500, 
            $sliderSpeed = 1000; 

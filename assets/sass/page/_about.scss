@@ -1,0 +1,279 @@
+// about-page
+
+.about-hero {
+	padding-top: 220px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		content: "";
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.53%, #FFFFFF 79.88%, rgba(255, 255, 255, 0) 100%);
+		opacity: 0.2;
+		width: 80%;
+		height: 1px;
+	}
+
+	@media(max-width:991px) {
+		padding-top: 180px;
+		padding-bottom: 80px;
+	}
+
+	.about-hero-content {
+
+		@media(max-width:991px) {
+			text-align: center;
+		}
+
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 62px;
+			line-height: 110%;
+			background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			margin-bottom: 30px;
+
+			@media(max-width:991px) {
+				font-size: 40px;
+			}
+
+		}
+
+		p {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 140%;
+			margin-bottom: 30px;
+
+			@media(max-width:991px) {
+				font-size: 18px;
+			}
+		}
+
+		.theme-btn {
+			margin-top: 30px;
+		}
+	}
+}
+
+.dotted {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+// vision-area
+
+.vision-area,
+.mission-area {
+	background: url(../images/vision.jpg) no-repeat center center;
+	background-size: cover;
+	height: 480px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 80px;
+
+	@media(max-width:767px) {
+		height: 300px;
+		padding-bottom: 40px;
+	}
+
+	.vision-wrap,
+	.mission-wrap {
+		max-width: 564px;
+		background: rgba(0, 0, 0, 0.69);
+		border-radius: 12px;
+		padding: 25px 30px;
+
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 115%;
+
+			@media(max-width:991px) {
+				font-size: 25px;
+			}
+
+			@media(max-width:767px) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.mission-area {
+	background: url(../images/mission.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+// partners-section s3
+
+.partners-section.s3 {
+	h2 {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 110%;
+		color: $white;
+		opacity: 1;
+		text-transform: capitalize;
+
+		@media(max-width:1200px) {
+			font-size: 35px;
+		}
+
+		@include media-query(767px) {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		@include media-query(575px) {
+			font-size: 25px;
+			line-height: 32px;
+		}
+	}
+
+	.prt-btn {
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.partner-grids {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+}
+
+
+// launch-area
+
+.launch-area {
+	background: linear-gradient(265.45deg, #4394FF 0%, #27288A 100%);
+	padding: 60px 0;
+
+	.launch-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include media-query(575px) {
+			display: block;
+			text-align: center;
+		}
+
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 110%;
+
+			@include media-query(575px) {
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.theme-btn-2 {
+			display: inline-block;
+			padding: 10px 25px;
+			background: $white;
+			border-radius: 8px;
+			color: $dark-gray;
+		}
+	}
+}
+
+// builders
+
+.solution-area.builders {
+	background: $black;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		content: "";
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.53%, #FFFFFF 79.88%, rgba(255, 255, 255, 0) 100%);
+		opacity: 0.2;
+		width: 80%;
+		height: 1px;
+	}
+
+	.solution-wrap .solution-item {
+		.icon {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+// team-section
+
+.team-section {
+	overflow: hidden;
+	.team-item {
+		position: relative;
+		margin-bottom: 30px;
+
+		.team-img {
+			border-radius: 8px;
+			overflow: hidden;
+
+			img {
+				border-radius: 8px;
+				transition: all .3s;
+				transform: scale(1);
+				width: 100%;
+			}
+		}
+
+		&:hover {
+			.team-img {
+				img {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		.team-text {
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			padding: 24px;
+			width: 100%;
+			align-items: flex-end;
+
+			h4 {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 110%;
+			}
+
+			span {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 150%;
+			}
+
+			.team-text-right{
+				i{
+					font-size: 25px;
+					color: $white;
+				}
+			}
+		}
+	}
+}
