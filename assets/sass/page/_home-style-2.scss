@@ -1,47 +1,7 @@
 // service-area s2
 
 .service-area.s2 {
-	.service-wrap {
-
-		.service-item {
-
-			h2 {
-				background: linear-gradient(81.82deg, #A000FA 0%, #644DFC 100%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-				text-fill-color: transparent;
-			}
-		}
-
-		.col {
-			&:nth-child(2) {
-				.service-item {
-					h2 {
-						background: linear-gradient(81.82deg, #3C7CDD 0%, #77DCE7 100%);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-clip: text;
-						text-fill-color: transparent;
-					}
-				}
-			}
-		}
-
-		.col {
-			&:nth-child(3) {
-				.service-item {
-					h2 {
-						background: linear-gradient(81.82deg, #1CCA7D 0%, #60DA66 100%), linear-gradient(81.82deg, #FB6F43 0%, #FC7B7B 100%), linear-gradient(81.82deg, #1CCA7D 0%, #60DA66 100%);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-clip: text;
-						text-fill-color: transparent;
-					}
-				}
-			}
-		}
-	}
+	
 }
 
 
@@ -348,8 +308,19 @@
 .engagement-area {
 	position: relative;
 	z-index: 1;
-	padding-top: 50px;
-	padding-bottom: 0;
+	padding-bottom: 80px;
+
+	&:before {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		content: "";
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.53%, #FFFFFF 79.88%, rgba(255, 255, 255, 0) 100%);
+		opacity: 0.2;
+		width: 80%;
+		height: 1px;
+	}
 
 	.engagement-wrap {
 		.engagement-item {
